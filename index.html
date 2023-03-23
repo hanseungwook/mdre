@@ -212,8 +212,8 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				Functions of the ratio of the densities $$ {p/q} $$ are widely used in machine learning to quantify the discrepancy between the two distributions $$ {p} $$ and $ {q} $. For high-dimensional distributions, binary classification-based density ratio estimators have shown great promise. However, when densities are <i> well separated</i>, estimating the density ratio with a binary classifier is challenging. In this work, we show that the state-of-the-art density ratio estimators do perform poorly on \emph{well separated} cases and demonstrate that this is due to distribution shifts between training and evaluation time. We present an alternative method that leverages multi-class classification for density ratio estimation and does not suffer from distribution shift issues. The method uses a set of auxiliary densities $\{m_k\}_{k=1}^K$ and trains a multi-class logistic regression to classify the samples from $p, q$ and $\{m_k\}_{k=1}^K$ into $K+2$ classes. We show that if these auxiliary densities are constructed such that they overlap with $p$ and $q$, then a multi-class logistic regression 
-allows for estimating $ {\log p/q} $ on the domain of any of the $ {K+2} $ distributions and resolves the distribution shift problems of the current state-of-the-art methods.
+				Functions of the ratio of the densities $$ {p/q} $$ are widely used in machine learning to quantify the discrepancy between the two distributions $$ {p} $$ and $$ {q} $$. For high-dimensional distributions, binary classification-based density ratio estimators have shown great promise. However, when densities are <i> well separated</i>, estimating the density ratio with a binary classifier is challenging. In this work, we show that the state-of-the-art density ratio estimators do perform poorly on \emph{well separated} cases and demonstrate that this is due to distribution shifts between training and evaluation time. We present an alternative method that leverages multi-class classification for density ratio estimation and does not suffer from distribution shift issues. The method uses a set of auxiliary densities $\{m_k\}_{k=1}^K$ and trains a multi-class logistic regression to classify the samples from $p, q$ and $$ {\{m_k\}_{k=1}^K} $$ into $$ {K+2} $$ classes. We show that if these auxiliary densities are constructed such that they overlap with $$ {p} $$ and $$ {q} $$, then a multi-class logistic regression 
+allows for estimating $$ {\log p/q} $$ on the domain of any of the $$ {K+2} $$ distributions and resolves the distribution shift problems of the current state-of-the-art methods.
 We compare our method to state-of-the-art density ratio estimators on both synthetic and real datasets and demonstrate its superior performance on the tasks of density ratio estimation, mutual information estimation, and representation learning.
 			</td>
 		</tr>
@@ -221,7 +221,7 @@ We compare our method to state-of-the-art density ratio estimators on both synth
 	<br>
 
 	<hr>
-	<center><h1>Talk</h1></center>
+	<!-- <center><h1>Talk</h1></center>
 	<p align="center">
 		<iframe width="660" height="395" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen align="center"></iframe>
 	</p>
@@ -235,7 +235,7 @@ We compare our method to state-of-the-art density ratio estimators on both synth
 			</center>
 		</tr>
 	</table>
-	<hr>
+	<hr> -->
 
 	<center><h1>Code</h1></center>
 
