@@ -1,6 +1,6 @@
-@inproceedings{author20XXtitle,
-  title={Please cite me},
-  author={Author, First and Author, Second and Author, Third},
-  booktitle={Conference},
-  year={20XX}
+@inproceedings{asrivastava2023mdre,
+  title={Estimating the Density Ratio between Distributions with High Discrepancy using Multinomial Logistic Regression},
+  author={Srivastava, Akash and Han, Seungwook and Xu, Kai and Rhodes, Benjamin and Gutmann, Michael U.},
+  booktitle={Transactions on Machine Learning Research},
+  year={2023}
 }
