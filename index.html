@@ -194,6 +194,19 @@
 		</table>
 
 		<table align=center width=850px>
+			<center><h1>Abstract</h1></center>
+			<tr>
+				<td>
+					Functions of the ratio of the densities <i>p/q</i> are widely used in machine learning to quantify the discrepancy between the two distributions <i>p</i> and <i>q</i>. For high-dimensional distributions, binary classification-based density ratio estimators have shown great promise. However, when densities are <i> well separated</i>, estimating the density ratio with a binary classifier is challenging. In this work, we show that the state-of-the-art density ratio estimators do perform poorly on <i>well separated</i> cases and demonstrate that this is due to distribution shifts between training and evaluation time. We present an alternative method that leverages multi-class classification for density ratio estimation and does not suffer from distribution shift issues. The method uses a set of auxiliary densities \{m_k\}_{k=1}^K and trains a multi-class logistic regression to classify the samples from <i>p, q</i> and <i>{m_k\}_{k=1}^K</i> into <i>K+2</i> classes. We show that if these auxiliary densities are constructed such that they overlap with <i>p</i> and <i>q</i>, then a multi-class logistic regression 
+	allows for estimating <i>log p/q</i> on the domain of any of the <i>K+2</i> distributions and resolves the distribution shift problems of the current state-of-the-art methods.
+	We compare our method to state-of-the-art density ratio estimators on both synthetic and real datasets and demonstrate its superior performance on the tasks of density ratio estimation, mutual information estimation, and representation learning.
+				</td>
+			</tr>
+		</table>
+		<br>
+
+
+		<table align=center width=850px>
 			<caption style="caption-side:bottom">The figures above compares the decision boundaries and the goodness of fit of the density ratio <i>p/q</i> of our model (MDRE) and a binary classifier-based density ratio estimator (BDRE).
 				The first and third plots illustrate the learned decision boundaries for each of the distributions (<i>p, q, m</i>) and it is clear that MDRE is much better calibrated.
 				The second and fourth plots compare the ground truth and estimated density ratios and, once again, MDRE accurately learns the density ratio, whereas BDRE fails to do so.
@@ -327,18 +340,6 @@
 	</center>
 
 	<hr>
-
-	<table align=center width=850px>
-		<center><h1>Abstract</h1></center>
-		<tr>
-			<td>
-				Functions of the ratio of the densities <i>p/q</i> are widely used in machine learning to quantify the discrepancy between the two distributions <i>p</i> and <i>q</i>. For high-dimensional distributions, binary classification-based density ratio estimators have shown great promise. However, when densities are <i> well separated</i>, estimating the density ratio with a binary classifier is challenging. In this work, we show that the state-of-the-art density ratio estimators do perform poorly on <i>well separated</i> cases and demonstrate that this is due to distribution shifts between training and evaluation time. We present an alternative method that leverages multi-class classification for density ratio estimation and does not suffer from distribution shift issues. The method uses a set of auxiliary densities \{m_k\}_{k=1}^K and trains a multi-class logistic regression to classify the samples from <i>p, q</i> and <i>{m_k\}_{k=1}^K</i> into <i>K+2</i> classes. We show that if these auxiliary densities are constructed such that they overlap with <i>p</i> and <i>q</i>, then a multi-class logistic regression 
-allows for estimating <i>log p/q</i> on the domain of any of the <i>K+2</i> distributions and resolves the distribution shift problems of the current state-of-the-art methods.
-We compare our method to state-of-the-art density ratio estimators on both synthetic and real datasets and demonstrate its superior performance on the tasks of density ratio estimation, mutual information estimation, and representation learning.
-			</td>
-		</tr>
-	</table>
-	<br>
 
 	<hr>
 	<!-- <center><h1>Talk</h1></center>
