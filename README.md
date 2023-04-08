@@ -1,5 +1,5 @@
 # mdre
-Estimating the Density Ratio between Distributions with High Discrepancy using Multinomial Logistic Regression
+[Estimating the Density Ratio between Distributions with High Discrepancy using Multinomial Logistic Regression](https://openreview.net/pdf?id=jM8nzUzBWr)
 
 ## Environment setup
 We use two environments for our experiments. For all of the experiments except the high dimensional ones, we use PyTorch. For the high dimensional experiments, we use Tensorflow.
